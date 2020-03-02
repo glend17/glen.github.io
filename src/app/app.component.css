@@ -1,0 +1,18 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:aqua;
+    margin: 0em; 
+    padding-top: 0em;
+    position: relative;
+}
+
+td:hover{
+    background-color:aqua;
+}
+
+table{
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+  }
