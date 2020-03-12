@@ -6,9 +6,9 @@
     position: relative;
 }
 
-td:hover{
+/* td:hover{
     background-color:aqua;
-}
+} */
 
 table{
     border-collapse: collapse;

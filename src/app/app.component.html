@@ -1,18 +1,148 @@
 <div class="container">
   <h1>Visualize Search Algorithms</h1>
 </div>
-<table  >
-<ng-container *ngFor="let i of snaketiles">
-  <tr style="margin: 0px;padding: 0px;">
-    
-  <ng-container *ngFor="let j of i">
-    <td  style="display: table-cell; margin: 0px;padding: 0px; width: 60px;height: 20px;"></td>
-    
-    
 
-  </ng-container>
-  </tr>
+<div>
+  
+  <button name="visualize" (click)="startSearch($event)">Visualize</button>
+  <button name="refresh" (click)="refresh()">Refresh</button>
+</div>
 
+<div>
+<table style="width:400px;height:400px" >
+<tr id="0">
+  <td id="0-0" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="0-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="0-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="0-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="0-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="0-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="0-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="0-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="0-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="0-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
 
-</ng-container>
+</tr>
+<tr id="1">
+  <td id="1-0" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="1-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="1-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="1-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="1-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="1-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="1-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="1-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="1-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="1-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+
+</tr>
+<tr id="2">
+  <td id="2-0" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="2-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="2-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="2-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="2-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="2-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="2-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="2-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="2-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="2-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+
+</tr>
+<tr id="3">
+  <td id="3-0" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="3-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="3-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($eventv)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="3-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="3-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="3-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="3-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="3-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="3-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="3-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+
+</tr>
+<tr id="4">
+  <td id="4-0" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="4-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="4-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="4-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="4-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="4-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="4-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="4-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="4-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="4-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+
+</tr>
+<tr id="5">
+  <td id="5-0" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="5-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="5-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="5-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="5-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="5-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="5-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="5-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="5-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="5-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+
+</tr>
+
+<tr id="6">
+  <td id="6-0" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="6-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="6-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="6-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="6-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="6-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="6-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="6-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="6-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="6-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+
+</tr>
+<tr id="7">
+  <td id="7-0" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="7-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="7-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="7-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="7-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="7-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="7-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="7-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="7-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="7-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+
+</tr>
+<tr id="8">
+  <td id="8-0" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="8-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="8-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="8-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="8-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="8-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="8-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="8-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="8-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="8-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+
+</tr>
+
+<tr id="9">
+  <td id="9-0" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="9-1" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="9-2" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="9-3" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="9-4" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="9-5" (mousedown)="press($event)" (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="9-6" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="9-7" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="9-8" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+  <td id="9-9" (mousedown)="press($event)"  (mouseup)="mouseupp($event)" (click)="clicked($event)" (mouseover)="mousecome($event)" (mouseleave)="mouseleft($event)"></td>
+
+</tr>
+
 </table>
+
+</div>
