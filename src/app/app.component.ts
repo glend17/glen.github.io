@@ -35,7 +35,34 @@ export class AppComponent {
   element:Q;
 
   
+keepBlocks():void{
+  for(let i=0;i<10;i++){
+    for(let j=0;j<10;j++)
+    {
+      let element:string=i.toString()+"-"+j.toString();
+      if(this.snaketiles[i][j]==5){
+        this.snaketiles[i][j]=0;
+        document.getElementById(element).style.backgroundColor="white";
 
+
+      }
+      
+      //else if(this.snaketiles[i][j]==)
+    }
+  }
+  this.snaketiles[this.startrow][this.startcol]=1;
+  this.snaketiles[this.destinationrow][this.destinationcol]=2;
+  let element:string=this.startrow.toString()+"-"+this.startcol.toString();
+  document.getElementById(element).style.backgroundColor="green";
+  element=this.destinationrow.toString()+"-"+this.destinationcol.toString();
+  document.getElementById(element).style.backgroundColor="red";
+  while(this.theQ.length>0)
+  {
+    this.theQ.shift();
+  }
+  this.theQ.push({row:this.startrow,col:this.startcol,isvisited:true,prevrow:-1,prevcol:-1});
+
+}
 
 refresh():void{
   
@@ -191,7 +218,7 @@ refresh():void{
    this.pathcol=cols;
    //this.map.set((rows+1).toString+"-"+cols.toString(),elementStr);
    //console.log(this.map.get("0-2"));
-   this.intervals=setInterval(()=>{this.findpath(),500});
+   this.intervals=setInterval(()=>{this.findpath(),100});
    return;
     }
     this.snaketiles[rows][cols]=5;
@@ -234,7 +261,7 @@ refresh():void{
     this.theQ.shift();
     this.theQ.push({row:this.startrow,col:this.startcol,isvisited:true,prevrow:-1,prevcol:-1});
      this.intervals=setInterval(() => {
-      this.renders()}, 5);
+      this.renders()}, 50);
  //console.log(this.theQ);
 
 
